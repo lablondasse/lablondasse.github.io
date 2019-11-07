@@ -5,15 +5,118 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/styles.css">
+    <style>
+    body{
+      font-family: "arial";
+      /* font-family: cambria; */
+      color:grey;
+      font-style: italic;
+    } 
+    h1{
+      font-family: Arial;
+      color: green;
+      font-size: 48px;
+      font-style: italic;
+      text-align: left;
+    }
+    h2{
+      font-family: Arial;
+      font-size: 32px;
+      text-align: center;
+    }
+    h3{
+      font-family: Arial;
+      font-size: 24px;
+      text-align: right;
+    }
+
+    p {
+
+      /* color: red; */
+      font-family: Arial; 
+      font-size: 18px;
+      line-height: 1.4;
+      
+      }
+
+     .intro{
+        font-family: Georgia;
+        font-size: 20px;
+        font-weight: bold;
+        color: black;
+        background-color: lightyellow;
+        border-color: yellow;
+        border-width: 5px;
+        /* border-style: dotted; */
+        /* border-style: dashed; */
+        border-style: solid;
+        border-radius: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+        
+      }
+      .standfirst{
+        font-family: Georgia;
+        font-size: 20px;
+        font-weight: bold;
+        color: black; 
+      }
+      .beginsecond{
+        font-family: Georgia;
+        font-size: 20px;
+        font-weight: bold;
+        color: black;
+         
+      }
+      a{
+        color: red;
+        text-decoration: none;
+      }
+      a:hover{
+        background-color: red;
+        color:green;
+        /* text-decoration: underline; */
+        text-decoration: overline;
+      }
+      nav a{
+        font-family: Arial;
+        font-size: 20px;
+        font-style: italic;
+      }
+
+    </style>
     <title>Blank site</title>
   </head>
 
   <body>
     <header>
-      <h1>Blank site</h1>
-      <p class="standfirst">This is starter kit to build sites based on the needs of academic researchers. This kit is simple by design. It includes color swatches, typography, icons and a spacing system and components. The CSS presentation layer can, and should be, ported to various content creation systems popular at UCLA.</p>
-      
+      <nav>
+        <a href=" ">Go to home page</a>
+      </nav>
+      <!-- <h1>Welcome to environment <span>University</span>of</h1> -->
+      <h1>Welcome to environment<span> University </span> of IBAY </h1>
+      <!-- <h1>Environmental teach</h1> -->
+      <p class="standfirst">This is starter kit to build sites based on the needs of academic researchers. 
+        This kit is simple by design. It includes color swatches, typography, icons and a spacing system 
+        and components. The CSS presentation layer can, and should be, ported to various content creation 
+        systems popular at UCLA.
+      </p>
+      <div class="intro">
+        <p>I want to test this option. It's so cool! I love this! But now, i want to put it 
+          in comment!
+          SOORRYY! This is starter kit to build sites based on the needs of academic researchers. 
+          This kit is simple by design. It includes color swatches, typography, icons and a spacing system 
+          and components. The CSS presentation layer can, and should be, ported to various content creation 
+          systems popular at UCLA.
+        </p>
+      </div>   
+      <h2>Global environment compagny</h2>
+      <p class="beginsecond">This is starter kit to build sites based on the needs of academic researchers. 
+          This kit is simple by design. <a href="">It includes color swatches</a>, typography, icons and a 
+          spacing system and components. The CSS presentation layer can, and should be, ported to various content creation 
+          systems popular at UCLA.
+      </p>
+      <h3 class="intro">Historical international school</h3>
     </header>
     <main>
         <h2>Foundations</h2>
