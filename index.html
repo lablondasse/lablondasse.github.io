@@ -22,7 +22,7 @@
 header{
   grid-column-start: 1;
   grid-column-end: 3;
-  background-color: peru;
+  /* background-color: peru; */
 }
 
 main{
@@ -101,20 +101,115 @@ footer{
          
       }
       a{
-        color: red;
-        text-decoration: none;
+        display: block;
+        padding: 8px;
+        background-color: purple;
+        /* color: red;
+        text-decoration: none; */
       }
       a:hover{
-        background-color: red;
-        color:green;
+        /* background-color: red; */
+        color: black;
         /* text-decoration: underline; */
         text-decoration: overline;
       }
       nav a{
         font-family: Arial;
         font-size: 20px;
-        font-style: italic;
+        font-style: normal;
+        font-weight: bold;
       }
+      /* Dropdown Button */
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: none;
+}
+/* The subnavigation menu */
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: red;
+  width: 100%;
+  z-index: 1;
+}
+
+/* Style the subnav links */
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+/* Add a grey background color on hover */
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
 
     </style>
     <title>Yaoundé Workshop</title>
@@ -123,9 +218,38 @@ footer{
   <body>
     <header>
 <nav>
-        <a href=" ">Go to home page</a>
+        <!-- <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#fondations">Fondations</a></li>
+            <li><a href="#pages">Pages</a></li>
+            <li style="float:right"><a class="active" href="#about">About</a></li>
+          </ul> -->
+          <div class="dropdown">
+              <button class="dropbtn">Home</button>
+              <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Fondations</button>
+                <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                  <button class="dropbtn">Pages</button>
+                  <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                  </div>
+                </div>
       </nav>
-      <h1>Welcome to environment<span> University </span> of IBAY </h1>
+    <h1>Welcome to environment<span> University </span> of IBAY </h1>
       <!-- <title>About | Yaoundé Web Design Workshop</title> -->
       <!-- <h1>Welcome to environment <span>University</span>of</h1> -->
       <!-- <h1>Environmental teach</h1> -->
@@ -144,9 +268,10 @@ footer{
         </p>
       </div>    -->
       <p class="beginsecond">This is starter kit to build sites based on the needs of academic researchers. 
-          This kit is simple by design. <a href="">It includes color swatches</a>, typography, icons and a 
+          This kit is simple by design. It includes color swatches, typography, icons and a 
           spacing system and components. The CSS presentation layer can, and should be, ported to various content creation 
           systems popular at UCLA.
+          <!-- <a href=""></a> -->
       </p>
     </header>
 
@@ -166,7 +291,7 @@ footer{
         </ul>
         <h2>Pages</h2>
         <ul>
-          <li><a href="about/">About</a></li>
+          <li><a href="about/"></a></li>
           <li><a href="blog/">Blog</a></li>
           <li><a href="contact/">Contact</a></li>
           <li><a href="now/">Now</a></li>
