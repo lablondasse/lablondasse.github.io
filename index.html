@@ -5,13 +5,45 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="css\styles.css"> -->
     <style>
+
     body{
       font-family: "arial";
       /* font-family: cambria; */
       color:grey;
       font-style: italic;
+
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 20px;
     } 
+
+header{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: peru;
+}
+
+main{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+aside{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+footer{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: pink;
+}
     h1{
       font-family: Arial;
       color: green;
@@ -85,40 +117,45 @@
       }
 
     </style>
-    <title>Blank site</title>
+    <title>Yaoundé Workshop</title>
   </head>
 
   <body>
     <header>
-      <nav>
+<nav>
         <a href=" ">Go to home page</a>
       </nav>
-      <!-- <h1>Welcome to environment <span>University</span>of</h1> -->
       <h1>Welcome to environment<span> University </span> of IBAY </h1>
+      <!-- <title>About | Yaoundé Web Design Workshop</title> -->
+      <!-- <h1>Welcome to environment <span>University</span>of</h1> -->
       <!-- <h1>Environmental teach</h1> -->
       <p class="standfirst">This is starter kit to build sites based on the needs of academic researchers. 
         This kit is simple by design. It includes color swatches, typography, icons and a spacing system 
         and components. The CSS presentation layer can, and should be, ported to various content creation 
         systems popular at UCLA.
       </p>
-      <div class="intro">
+      <!-- <div class="intro">
         <p>I want to test this option. It's so cool! I love this! But now, i want to put it 
           in comment!
           SOORRYY! This is starter kit to build sites based on the needs of academic researchers. 
           This kit is simple by design. It includes color swatches, typography, icons and a spacing system 
           and components. The CSS presentation layer can, and should be, ported to various content creation 
-          systems popular at UCLA. next text and time
+          systems popular at UCLA. next text and time!
         </p>
-      </div>   
-      <h2>Global environment compagny</h2>
+      </div>    -->
       <p class="beginsecond">This is starter kit to build sites based on the needs of academic researchers. 
           This kit is simple by design. <a href="">It includes color swatches</a>, typography, icons and a 
           spacing system and components. The CSS presentation layer can, and should be, ported to various content creation 
           systems popular at UCLA.
       </p>
-      <h3 class="intro">Historical international school</h3>
     </header>
+
     <main>
+        <h2>Global environment compagny</h2>
+      <figure>
+        <!-- <img src="img/chris-charles.jpg" alt="Goris" height="500" width="1200"> -->
+        <figcaption>It's an animal</figcaption>
+      </figure>
         <h2>Foundations</h2>
         <ul>
             <li><a href="color/index.html">Color swatches and tokens</a></li>
@@ -144,11 +181,18 @@
     <aside>
      <ul>
         <li><a href="https://github.com/scottgruber/academic-jumpstart">Get the starter kit code</a></li>
-       
       </ul>  
+      <h3 class="intro">Historical international school</h3>
+      <p>I want to test this option. It's so cool! I love this! But now, i want to put it 
+          in comment!
+          SOORRYY! This is starter kit to build sites based on the needs of academic researchers. 
+          This kit is simple by design. It includes color swatches, typography, icons and a spacing system 
+          and components. The CSS presentation layer can, and should be, ported to various content creation 
+          systems popular at UCLA. next text and time!
+        </p>
     </aside>
     <footer>
-        
+        <p>Copyright 2019</p>
     </footer>
   </body>
 
