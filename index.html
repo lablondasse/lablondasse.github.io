@@ -5,7 +5,6 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
     <style>
 
 /*division of page*/
@@ -15,19 +14,21 @@ header{
 }
 
 main{
-  grid-column-start: 2;
+  grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 3;
+  min-width: 200px;
 }
 
-aside{
+/* aside{
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 3;
   display: grid;
-}
+  position: left;
+} */
 
 footer{
   grid-column-start: 1;
@@ -38,13 +39,8 @@ footer{
   color: white;
 }
 
-/*apply only to main, aside*/
-main, aside{
-min-width: 300px;
-}
-
 /*apply only to header, main, aside*/
-header, main, aside{
+header, main{
   margin-left: 70px;
   margin-right: 70px;
 }
@@ -85,6 +81,7 @@ h1, h2, h3, h5{
 /*apply only to h2 of aside*/
 .asideh2{
   color: purple;
+  margin-top: 100px;
 }
 
 /*paragraph description*/
@@ -99,6 +96,7 @@ p {
         display: grid;
         gap: 2vw;
         grid-template-columns: repeat(auto-fill, minmax(200px, 2fr));
+        line-height: 1.4;
       }
 
 .swatch {
@@ -113,6 +111,7 @@ p {
         margin-top: 0em;
         font-size: 18px;
         line-height: 0cm;
+        line-height: 1.4;
         /* margin-bottom: 1em; */
       }
 
@@ -239,10 +238,10 @@ nav{
       overflow-x:auto;
     }
   }
+
 @media screen and (min-width: 100px)
   {
-    aside, footer
-    {
+    footer{
       position: relative;
       bottom: -100px;
     }
@@ -257,7 +256,8 @@ nav{
     <h1>Welcome to<span> YABIC </span> Mbalmayo </h1>
 <nav>
 <div class="dropdown">
-      <button class="dropbtn">Home</button>
+    <a href="index.html"><button class="dropbtn">Home</button></a>
+      
 </div>
 <div class="dropdown">
       <button class="dropbtn">Pages</button>
@@ -311,6 +311,23 @@ nav{
     <h5><a href="cvblondelle.html">ATSAFACK <br/> Blondelle <br/> Mélina</a></h5>
 </div>
 </div>
+
+<div class="swatch">
+    <div style="background: var(--color-candlelight);"></div>
+  <div>
+    <img src="img\blondelle.JPG" height="100px" width="100px">
+    <h5><a href="cvblondelle.html">ATSAFACK <br/> Blondelle <br/> Mélina</a></h5>
+</div>
+</div>
+
+<div class="swatch">
+    <div style="background: var(--color-candlelight);"></div>
+  <div>
+    <img src="img\blondelle.JPG" height="100px" width="100px">
+    <h5><a href="cvblondelle.html">ATSAFACK <br/> Blondelle <br/> Mélina</a></h5>
+</div>
+</div>
+
 </div>
 
 <div class="palette">
@@ -346,16 +363,39 @@ nav{
     </div>
 </div>
 </div>
-</main>
 
-<aside>
-      <h2 class="asideh2">Partners</h2>
-      <a href="#"><img src="img\iita.png" height="70px" width="100px"></a>
-      <a href="#"><img src="img\pdcva.jpg" height="70px" width="100px"></a>
-      <a href="#"><img src="img\minader.jpg" height="70px" width="100px"></a>
-      <a href="#"><img src="img\commerce.jpeg" height="70px" width="100px"></a>
-</aside>
-  
+<h2 class="asideh2">Partners</h2>
+<div class="palette">
+<div class="swatch">
+<div style="background: var(--color-candlelight);"></div>
+<div>
+<a href="#"><img src="img\iita.png" height="70px" width="100px"></a>
+</div>
+</div>  
+      
+<div class="swatch">
+<div style="background: var(--color-candlelight);"></div>
+<div>
+<a href="#"><img src="img\pdcva.jpg" height="70px" width="100px"></a>
+</div>
+</div>
+
+<div class="swatch">
+<div style="background: var(--color-candlelight);"></div>
+<div>
+<a href="#"><img src="img\minader.jpg" height="70px" width="100px"></a>
+</div>
+</div>
+
+<div class="swatch">
+<div style="background: var(--color-candlelight);"></div>
+<div>
+<a href="#"><img src="img\commerce.jpeg" height="70px" width="100px"></a>
+</div>
+</div>
+</div>
+</main>
+ 
 <footer>
     <a href="https://github.com/congo-basin-institute/blank-site">
       <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
