@@ -6,6 +6,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
+
+      @media screen and (min-width: 600px) {
 body{
       font-family: "arial";
       color: black;
@@ -14,12 +16,20 @@ body{
       grid-template-columns: 1fr 2fr;
       gap: 20px;
     } 
+  } 
 
+  @media screen and (min-width: 100px)
+  {
+    aside, footer
+    {
+      position: relative;
+      bottom: -100px;
+    }
+  }
+  
 header{
   grid-column-start: 1;
   grid-column-end: 3;
-  margin-left: 70px;
-  margin-right: 70px;
 }
 
 main{
@@ -27,17 +37,13 @@ main{
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 3;
-  margin-left: 70px;
-  margin-right: 70px;
 }
 
 aside{
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 2;
-  grid-row-end: 3;
-  margin-left: 70px;
-  margin-right: 70px;
+  grid-row-end: 3; 
 }
 
 footer{
@@ -47,6 +53,12 @@ footer{
   grid-row-end: 4;
   background-color: black;
   color: white;
+  padding: 1px;
+}
+
+header, main, aside{
+  margin-left: 70px;
+  margin-right: 70px;
 }
 
 h1{
@@ -58,10 +70,17 @@ h1{
     }
 
 h2{
-      font-family: Arial;
+      font-family: Georgia;
       font-size: 32px;
       color: green;
+      font-weight: bold;
     }
+
+p{
+  font-size: 15px;
+  line-height: 1.4;
+  justify-content: right;
+}
 
 </style>
     <title>CV ATSAFACK</title>
@@ -71,44 +90,49 @@ h2{
 
     <header>
         <h1>CURRICULUM VITAE</h1>
-        <img src="img\blondelle.JPG" height="100px" width="100px" style="float:right">
+        <img src="img\blondelle.JPG" height="150px" width="150px" style="float:right">
     </header>
 
 <main>
-<h2>Expériences</h2>
-<p>     •	En incubation depuis le 16 avril 2019 dans le cadre du programme visant le développement 
-    de l’enpreneuriat agricole jeune mis sur pied conjointement par l’Etat du Cameroun et l’Institut 
-    Internationale d’Agriculture Tropicale;<br/>
-        •	Rédactrice web en Freelance au club developpez.com – France;<br/>
-        •	trois mois de prestation dans le suivi et gestion de stock, programmation électronique a
-        u laboratoire de fabrication numérique de l’Agence Universitaire de la Francophonie sis à Yaoundé;<br/>
-        •	monitrice externe de l’OMS - CAMEROUN: les moniteurs ou monitrices externes de l’OMS travaillent en collaboration 
-        avec les consultants de l’OMS et de l’UNICEF.
-        </p>
-<h2>Compétences</h2>
-<p>
-        •	Travaille aisément tant sur les systèmes d’exploitation UNIX / LINUX que WINDOWS;<br/>
-        •	administration systèmes et réseaux;<br/>
-        •	montage des stations météorologiques avec Arduino;<br/>
-        •	développement des applications web et mobiles;<br/>
-        •	maîtrise les logiciels de bureautique (Word, Excel, Lyx, TexMaker, PowerPoint, etc.);<br/>
-        •	très sociable.
+<h2>EXPÉRIENCES</h2>
+<p> •	Bénéficiaire d’un programme visant le développement de l’enpreneuriat 
+  agricole jeune, mis sur pied conjointement par l’Etat du Cameroun (MINADER) et l’Institut 
+  Internationale d’Agriculture Tropicale (IITA);<br/>
+    •	Rédactrice web en Freelance au club developpez.com – France;<br/>
+    •	trois mois de prestation dans le suivi et gestion de stock, programmation électronique au laboratoire de fabrication numérique 
+    de l’Agence Universitaire de la Francophonie (AUF) à Yaoundé;<br/>
+    •	monitrice externe de l’OMS – CAMEROUN: les moniteurs ou monitrices 
+    externes de l’OMS travaillent en collaboration avec les consultants de l’OMS et de l’UNICEF.
 </p>
-<h2>Formations académiques</h2>
+<h2>COMPÉTENCES</h2>
 <p>
-        •	2019 – 2020 : Formation en Web Design chez IBAY SUP;<br/>
-        •	2016 - 2017 : Master en Informatique option Systèmes et Logiciels en Environnements Distribués 
-        mention Bien à l’Université de Ngaoundéré;<br/>
-        •	2015 - 2016 : Maîtrise en Informatique option Systèmes et Logiciels en Environnements Distribués 
-        mention Assez-Bien à l’Université de Ngaoundéré;<br/>
-        •	2015 - 2016 : Formation en Web adaptatif et dynamique à l’Agence Universitaire de la Francophonie 
-        de l’Université de Ngaoundéré;<br/>
-        •	2014 - 2015 : Licence en Informatique option Architectures et Réseaux 
-        mention Passable à l’Université de Ngaoundéré;<br/>
-        •	2011 - 2012 : Baccalauréat série C mention Assez-Bien au Lycée bilingue de
-        Ngaoundéré.
+    •	Travaille aisément tant sur les systèmes d’exploitation UNIX / LINUX que WINDOWS;<br/>
+    •	administration systèmes et réseaux;<br/>
+    •	montage des stations météorologiques avec Arduino;<br/>
+    •	développement des applications web et mobiles;<br/>
+    •	maîtrise les logiciels de bureautique (Word, Excel, Lyx, TexMaker, PowerPoint, etc.);<br/>
+    •	très sociable. 
 </p>
-<h2>Langues parlées et écrites</h2>
+<h2>FORMATIONS PROFESSIONNELLES</h2>
+<p>
+    •	2019 – 2020 : Formation en Web Design chez IBAY SUP;<br/>
+    •	2019 – 2020 : Formation en entrepreneuriat agricole par Enable Youth Cameroon;<br/>
+    •	2018 – 2019 : Formation Cisco Networking;<br/>
+    •	2015 - 2016 : Formation en Web adaptatif et dynamique 
+    à l’Agence Universitaire de la Francophonie (AUF) de l’Université de Ngaoundéré.    
+</p>
+
+<h2>FORMATIONS ACADÉMIQUES</h2>
+<p>
+    •	2016 - 2017 : Master en Informatique option Systèmes et Logiciels en Environnements Distribués 
+    mention Bien à l’Université de Ngaoundéré;<br/>
+    •	2015 - 2016 : Maîtrise en Informatique option Systèmes et Logiciels en Environnements Distribués 
+    mention Assez-Bien à l’Université de Ngaoundéré;<br/>
+    •	2014 - 2015 : Licence en Informatique option Architectures et Réseaux 
+    mention Passable à l’Université de Ngaoundéré;<br/>
+    •	2011 - 2012 : Baccalauréat série C mention Assez-Bien au Lycée bilingue de Ngaoundéré. 
+</p>
+<h2>LANGUES PARLÉES ET ÉCRITES</h2>
 <p>
         •	Français, couramment parlé et régulièrement écrit;<br/> 
         •	Anglais, expression et écriture moyennes.        

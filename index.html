@@ -4,22 +4,13 @@
 
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <style>
-body{
-      font-family: "arial";
-      color: black;
-      font-style: normal;
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-      gap: 20px;
-    } 
 
+/*division of page*/
 header{
   grid-column-start: 1;
   grid-column-end: 3;
-  margin-left: 70px;
-  margin-right: 70px;
 }
 
 main{
@@ -27,8 +18,6 @@ main{
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 3;
-  margin-left: 70px;
-  margin-right: 70px;
 }
 
 aside{
@@ -36,8 +25,6 @@ aside{
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 3;
-  margin-left: 70px;
-  margin-right: 70px;
 }
 
 footer{
@@ -49,49 +36,71 @@ footer{
   color: white;
 }
 
+/*apply only to main, aside*/
+main, aside{
+min-width: 300px;
+}
+
+/*apply only to header, main, aside*/
+header, main, aside{
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+/*apply only to h1*/
 h1{
-      font-family: Arial;
-      color: green;
       font-size: 48px;
       font-style: normal;
       font-weight: bold;
     }
 
+/*apply only to h2*/
 h2{
-      font-family: Arial;
       font-size: 32px;
-      color: green;
-    }
+  }
 
+/*apply only to h3*/
 h3{
-      font-family: Arial;
       font-size: 24px;
-    }
+  }
 
+/*apply only to h5*/
 h5{
-  font-family: Arial;
   font-size: 10px;
   line-height: 1.4;
 }
 
-.asideh2{
-  color: red;
+/*apply only to h1, h2*/
+h1, h2{
+  color: green;
+      }
+
+/*apply to h1, h2, h3, h5*/
+h1, h2, h3, h5{
+  font-family: Arial;
 }
 
+/*apply only to h2 of aside*/
+.asideh2{
+  color: purple;
+}
+
+/*paragraph description*/
 p {
       font-family: Arial; 
       font-size: 18px;
       line-height: 1.4;
       }
 
+/*grid disposition*/
 .palette {
         display: grid;
         gap: 2vw;
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(200px, 2fr));
       }
 
 .swatch {
-        align-items: center;
+        align-items: left;
         display: grid;
         grid-gap: 0px;
         grid-template-areas:
@@ -147,6 +156,7 @@ p {
         border-radius: 50%;
       }
 
+/*link*/
 a{
         display: block;
         padding: 5px;
@@ -158,6 +168,7 @@ a:hover{
         /* text-decoration: overline; */
       }
 
+/*navigation bar*/
 nav a{
         font-family: Arial;
         font-size: 20px;
@@ -169,6 +180,7 @@ nav{
         background-color: black;
       }
 
+/*sub-menus*/
 .dropbtn {
   background-color: gainsboro;
   color: black;
@@ -212,15 +224,33 @@ nav{
   background-color: gainsboro;
   }
 
+/*responsive command*/
+@media screen and (min-width: 600px) {
+  body{
+      font-family: "arial";
+      color: black;
+      font-style: normal;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 20px;
+    }
+  }
+@media screen and (min-width: 100px)
+  {
+    aside, footer
+    {
+      position: relative;
+      bottom: -100px;
+    }
+  }
+
 </style>
     <title>YABIC Mbalmayo</title>
   </head>
 
 <body>
-
 <header>
     <h1>Welcome to<span> YABIC </span> Mbalmayo </h1>
-  
 <nav>
 <div class="dropdown">
       <button class="dropbtn">Home</button>
@@ -265,102 +295,62 @@ nav{
   <div class="swatch">
           <div style="background: var(--color-candlelight);"></div>
           <div>
-            <h3>Text2</h3>
-          <p>This is starter kit <br/>to build sites based<br/> on the needs of academic <br/>researchers. 
-          This kit is simple by <br/>design. It includes color<br/> swatches, typography,<br/> icons and a
-          spacing system<br/> 
-          and components.
-    </p>
+            <img src="img\blondelle.JPG" height="100px" width="100px">
+   <h5><a href="cvblondelle.html">ATSAFACK <br/> Blondelle <br/> Mélina</a></h5>
   </div>
 </div>
 
 <div class="swatch">
     <div style="background: var(--color-candlelight);"></div>
   <div>
-      <h3>Text3</h3>
-      <p>This is starter kit <br/>to build sites based<br/> on the needs of academic <br/>researchers. 
-        This kit is simple by <br/>design. It includes color<br/> swatches, typography,<br/> icons and a
-        spacing system<br/> 
-        and components.
-    </p>
+    <img src="img\blondelle.JPG" height="100px" width="100px">
+    <h5><a href="cvblondelle.html">ATSAFACK <br/> Blondelle <br/> Mélina</a></h5>
 </div>
 </div>
 </div>
 
-<br/><br/><br/><br/><br/>
 <div class="palette">
 <div class="swatch">
     <div style="background: var(--color-candlelight);"></div>
     <div>
-        <h3>Text4</h3>
-  <p>This is starter kit <br/>to build sites based<br/> on the needs of academic <br/>researchers. 
-      This kit is simple by <br/>design. It includes color<br/> swatches, typography,<br/> icons and a
-      spacing system<br/> 
-      and components.
-  </p>
+      <img src="img\blondelle.JPG" height="100px" width="100px">
+      <h5><a href="cvblondelle.html">ATSAFACK <br/> Blondelle <br/> Mélina</a></h5>
     </div>
   </div>
 
   <div class="swatch">
       <div style="background: var(--color-candlelight);"></div>
       <div>
-          <h3>Text5</h3>
-    <p>This is starter kit <br/>to build sites based<br/> on the needs of academic <br/>researchers. 
-        This kit is simple by <br/>design. It includes color<br/> swatches, typography,<br/> icons and a
-        spacing system<br/> 
-        and components.
-    </p>
+        <img src="img\blondelle.JPG" height="100px" width="100px">
+        <h5><a href="cvblondelle.html">ATSAFACK <br/> Blondelle <br/> Mélina</a></h5>
       </div>
   </div>
+
   <div class="swatch">
       <div style="background: var(--color-candlelight);"></div>
       <div>
-          <h3>Text5</h3>
-    <p>This is starter kit <br/>to build sites based<br/> on the needs of academic <br/>researchers. 
-        This kit is simple by <br/>design. It includes color<br/> swatches, typography,<br/> icons and a
-        spacing system<br/> 
-        and components.
-    </p>
+        <img src="img\blondelle.JPG" height="100px" width="100px">
+        <h5><a href="cvblondelle.html">ATSAFACK <br/> Blondelle <br/> Mélina</a></h5>
       </div>
   </div>
+
+  <div class="swatch">
+    <div style="background: var(--color-candlelight);"></div>
+    <div>
+      <img src="img\blondelle.JPG" height="100px" width="100px">
+      <h5><a href="cvblondelle.html">ATSAFACK <br/> Blondelle <br/> Mélina</a></h5>
+    </div>
+</div>
 </div>
 </main>
 
 <aside>
 
       <h2 class="asideh2">Partners</h2>
-
-            <h3>Text6</h3>
-      <p>This is starter kit <br/>to build sites based<br/> on the needs of academic <br/>researchers. 
-          This kit is simple by <br/>design. It includes color<br/> swatches, typography,<br/> icons and a
-          spacing system<br/> 
-          and components.
-      </p>
-              <h3>Text7</h3>
-        <p>This is starter kit <br/>to build sites based<br/> on the needs of academic <br/>researchers. 
-            This kit is simple by <br/>design. It includes color<br/> swatches, typography,<br/> icons and a
-            spacing system<br/> 
-            and components.
-        </p>
-      
-        <h3>Text8</h3>
-          <p>This is starter kit <br/>to build sites based<br/> on the needs of academic <br/>researchers. 
-              This kit is simple by <br/>design. It includes color<br/> swatches, typography,<br/> icons and a
-              spacing system<br/> 
-              and components.
-          </p>
-                  <h3>Text9</h3>
-            <p>This is starter kit <br/>to build sites based<br/> on the needs of academic <br/>researchers. 
-                This kit is simple by <br/>design. It includes color<br/> swatches, typography,<br/> icons and a
-                spacing system<br/> 
-                and components.
-            </p>
-                    <h3>Text10</h3>
-              <p>This is starter kit <br/>to build sites based<br/> on the needs of academic <br/>researchers. 
-                  This kit is simple by <br/>design. It includes color<br/> swatches, typography,<br/> icons and a
-                  spacing system<br/> 
-                  and components.
-              </p>
+      <a href="#"><img src="img\iita.png" height="70px" width="100px"></a>
+      <a href="#"><img src="img\pdcva.jpg" height="70px" width="100px"></a>
+      <a href="#"><img src="img\minader.jpg" height="70px" width="100px"></a>
+      <a href="#"><img src="img\commerce.jpeg" height="70px" width="100px"></a>
 </aside>
   
 <footer>
