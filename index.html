@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
     <style>
 
 /*division of page*/
@@ -26,6 +26,7 @@ aside{
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 3;
+  display: grid;
 }
 
 footer{
@@ -226,7 +227,7 @@ nav{
   }
 
 /*responsive command*/
-/* @media screen and (min-width: 600px) {
+@media screen and (min-width: 600px) {
   body{
       font-family: "arial";
       color: black;
@@ -234,16 +235,18 @@ nav{
       display: grid;
       grid-template-columns: 1fr 2fr;
       gap: 20px;
+      display:block;
+      overflow-x:auto;
     }
-  } */
-/* @media screen and (min-width: 100px)
+  }
+@media screen and (min-width: 100px)
   {
     aside, footer
     {
       position: relative;
       bottom: -100px;
     }
-  } */
+  }
 
 </style>
     <title>YABIC Mbalmayo</title>
@@ -346,7 +349,6 @@ nav{
 </main>
 
 <aside>
-
       <h2 class="asideh2">Partners</h2>
       <a href="#"><img src="img\iita.png" height="70px" width="100px"></a>
       <a href="#"><img src="img\pdcva.jpg" height="70px" width="100px"></a>
